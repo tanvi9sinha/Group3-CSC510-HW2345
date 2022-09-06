@@ -23,6 +23,7 @@ def o(t):
   for key in u:
     output = output + ":" + key + " " + str(u[key]) + " "
   return "{" + output + "}"
+
 def oo(t):
   print(o(t))
   #  return t
