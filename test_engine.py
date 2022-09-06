@@ -42,3 +42,32 @@ def runs(k):
     return out 
   except:
     raise Exception("")
+
+
+def BAD():
+  print(eg["dont.have.this.field"])
+
+
+def LIST():
+  t = {}
+  for k in eg.items():
+    t[1 + len(t)] = k
+    t = OrderedDict(sorted(t.items()))
+  return t
+
+
+def ALL():
+  fails = 0
+  for _, v in eg["LIST"]().items():
+    if (v[0] != "ALL"):
+      print("\n---------------------------------")
+      if (not runs(v[0])):
+        fails = fails + 1
+  return True
+
+
+def LS():
+  print("\nExamples lua csv --e...")
+  for _, v in eg["LIST"]().items():
+    print(str(v[0]))
+  return True
