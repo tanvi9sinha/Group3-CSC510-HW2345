@@ -59,3 +59,20 @@ def coerce(s):
     return int(s)
   else:
     return fun(re.search('^[\s]*[\S+]*[\s]*$', s).group(0))
+
+the = {}
+
+def gsub(help):
+    pattern = re.compile(r"-[\S+]\s+--[\S+]+\s+[\S+]+\s+=\s[\S+]+", re.IGNORECASE)
+    mo = pattern.findall(help)
+    for e in mo:
+      pattern1 = re.compile(r"-[\S+]\s+--[\S+]+\s+[\S+]+\s+", re.IGNORECASE)
+      pattern2 = re.compile(r"=\s[\S+]+", re.IGNORECASE)
+      val = pattern2.search(e).group()[2:]
+      the[pattern1.search(e).group()] = coerce(val) #passing values to coerce function
+    print(the)
+gsub(help)
+
+def test_the():
+  oo(the)
+  return True
