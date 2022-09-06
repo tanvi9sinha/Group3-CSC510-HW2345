@@ -71,3 +71,45 @@ def LS():
   for _, v in eg["LIST"]().items():
     print(str(v[0]))
   return True
+
+def SYM():
+  print("----SYM TEST CASE-------")
+  sym = Sym()
+  pairs = ['a','a','a','a','b','b','c']
+  for x in pairs:
+    sym.add(x)
+  mode = sym.mid()
+  print("Mode: " + mode)
+
+  entropy = sym.div()
+  print("Entropy: " + str(entropy))
+
+def NUM():
+  print("----NUM TEST CASE-------")
+  num = Num()
+  for i in range(1, 101):
+    num.add(i)
+  mid = num.mid()
+  div = num.div()
+  print("Mid: " + str(mid))
+  print("Div: " + str(div))
+
+def BIGNUM(): 
+  print("----BIGNUM TEST CASE-------")
+  num = Num()
+  the["nums"] = 32
+  for i in range(1, 1001): 
+    num.add(i)
+  print(num.nums())
+  print("Number of numbers: " + str(len(num._has)))
+
+eg["BAD"] = BAD
+eg["LIST"] = LIST
+eg["ALL"] = ALL
+eg["LS"] = LS
+eg["runs"] = runs
+eg["SYM"] = SYM
+eg["NUM"] = NUM
+eg["BIGNUM"] = BIGNUM
+
+eg["runs"]("ALL")
