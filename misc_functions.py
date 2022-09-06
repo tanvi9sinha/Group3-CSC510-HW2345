@@ -23,3 +23,38 @@ def o(t):
   for key in u:
     output = output + ":" + key + " " + str(u[key]) + " "
   return "{" + output + "}"
+def oo(t):
+  print(o(t))
+  #  return t
+
+import re
+
+help = """ 
+ CSV : summarized csv file
+(c) 2022 Tim Menzies <timm@ieee.org> BSD-2 license
+
+ USAGE: lua seen.lua [OPTIONS]
+ OPTIONS
+ -e  --eg        start-upexample                      = nothing
+ -d  --dump      ontestfailure,exitwithstackdump = false
+ -f  --file      filewithcsvdata                    = ../data/auto93.csv
+ -h  --help      show help                             = false
+ -n  --nums      numberofnumstokeep                = 512
+ -s  --seed      randomnumberseed                    = 10019 
+ -S  --seperator feildseperator                       = , """
+
+
+def coerce(s):
+  def fun(s1):
+    if s1 == "true":
+      print("here")
+      return True
+    elif s1 == "false":
+      return False
+    else:
+      return s1
+
+  if s.isnumeric():
+    return int(s)
+  else:
+    return fun(re.search('^[\s]*[\S+]*[\s]*$', s).group(0))
