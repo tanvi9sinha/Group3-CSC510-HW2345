@@ -76,3 +76,7 @@ gsub(help)
 def test_the():
   oo(the)
   return True
+
+
+def rnd(x, places=2):
+  return round(x, places)
