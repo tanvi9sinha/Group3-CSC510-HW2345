@@ -90,3 +90,15 @@ def test_the():
 
 def rnd(x, places=2):
   return round(x, places)
+
+def copy(t):
+  if(type(t)!= "dict"):
+    return t
+  u = {}
+  for k, v in t.items():
+    u[k] = copy(v)
+  return u
+
+def push(t, x):
+  t[1 + len(t)] = x
+  return x
