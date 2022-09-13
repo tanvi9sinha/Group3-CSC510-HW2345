@@ -1,3 +1,9 @@
+import sys
+import re
+from csv import reader
+
+the = {"seed": 2022, "dump": False, "nums": 100}
+
 def csv(fname, fun):
   sep = "([^" + "\," + "]+" # Replace comma with the.separator!
   with open(fname) as file_obj:
@@ -12,7 +18,6 @@ def per (t, p = 0.5):
   p = int(p * len(t) + 0.5)
   return t[max(1, min(len(t), p))]
 
-import re
 
 def o(t):
   if (type(t) !=  dict and type(t).__module__ == "__builtin__"):
@@ -113,22 +118,21 @@ def coerce(s):
   else:
     return fun(re.search('^[\s]*[\S+]*[\s]*$', s).group(0))
 
-the = {}
 
-def gsub(help):
-    pattern = re.compile(r"-[\S+]\s+--[\S+]+\s+[\S+]+\s+=\s[\S+]+", re.IGNORECASE)
-    mo = pattern.findall(help)
-    for e in mo:
-      pattern1 = re.compile(r"-[\S+]\s+--[\S+]+\s+[\S+]+\s+", re.IGNORECASE)
-      pattern2 = re.compile(r"=\s[\S+]+", re.IGNORECASE)
-      val = pattern2.search(e).group()[2:]
-      the[pattern1.search(e).group()] = coerce(val) #passing values to coerce function
-    print(the)
-gsub(help)
+# def gsub(help):
+#     pattern = re.compile(r"-[\S+]\s+--[\S+]+\s+[\S+]+\s+=\s[\S+]+", re.IGNORECASE)
+#     mo = pattern.findall(help)
+#     for e in mo:
+#       pattern1 = re.compile(r"-[\S+]\s+--[\S+]+\s+[\S+]+\s+", re.IGNORECASE)
+#       pattern2 = re.compile(r"=\s[\S+]+", re.IGNORECASE)
+#       val = pattern2.search(e).group()[2:]
+#       the[pattern1.search(e).group()] = coerce(val) #passing values to coerce function
+#     print(the)
+# gsub(help)
 
-def test_the():
-  oo(the)
-  return True
+# def test_the():
+#   oo(the)
+#   return True
 
 
 def rnd(x, places=2):
