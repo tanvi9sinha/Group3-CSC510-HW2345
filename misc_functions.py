@@ -1,3 +1,13 @@
+def csv(fname, fun):
+  sep = "([^" + "\," + "]+" # Replace comma with the.separator!
+  with open(fname) as file_obj:
+    reader_obj = reader(file_obj)
+    for row in reader_obj:
+      t = {}
+      for element in row:
+        t[str(1 + len(t))] = coerce(element)
+      fun(t)
+      
 def per (t, p = 0.5):
   p = int(p * len(t) + 0.5)
   return t[max(1, min(len(t), p))]
