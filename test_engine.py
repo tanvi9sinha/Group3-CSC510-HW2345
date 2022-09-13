@@ -6,7 +6,7 @@ from Sym import *
 from misc_functions import *
 
 eg = {}
-the = {"seed": 2022, "dump": False, "nums": 100}
+
 
 def pcall(func): 
   try: 
@@ -118,6 +118,13 @@ def CSV():
   csv("data.csv", fun)
   return True
 
+def DATA():
+  print("----DATA TEST CASE------")
+  d = Data("data.csv")
+  for _,col in d.cols.y.items():
+     oo(col) 
+  return True
+
 def STATS():
   print("----STATS TEST CASE------")
   data = Data("data.csv")
@@ -132,7 +139,6 @@ eg["BAD"] = BAD
 eg["LIST"] = LIST
 eg["ALL"] = ALL
 eg["LS"] = LS
-eg["runs"] = runs
 eg["SYM"] = SYM
 eg["NUM"] = NUM
 eg["BIGNUM"] = BIGNUM
