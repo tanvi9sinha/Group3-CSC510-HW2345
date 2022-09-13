@@ -1,7 +1,9 @@
 from collections import OrderedDict
-import random 
+import random
+from Data import *
 from Num import *
 from Sym import *
+from misc_functions import *
 
 eg = {}
 the = {"seed": 2022, "dump": False, "nums": 100}
@@ -103,6 +105,29 @@ def BIGNUM():
   print(num.nums())
   print("Number of numbers: " + str(len(num._has)))
 
+def CSV():
+  print("----CSV TEST CASE------")
+  n=0
+  def fun(row):
+    nonlocal n
+    n=n+1
+    if(n<=10):
+      oo_2(row)
+    else:
+      return
+  csv("data.csv", fun)
+  return True
+
+def STATS():
+  print("----STATS TEST CASE------")
+  data = Data("data.csv")
+  div = lambda col: col.div()
+  mid = lambda col: col.mid()
+  print("xmid", o(data.stats(2, data.cols.x, mid)))
+  print("xdiv", o(data.stats(3, data.cols.x, div)))
+  print("ymid", o(data.stats(2, data.cols.y, mid)))
+  print("ydiv", o(data.stats(3, data.cols.y, div)))
+
 eg["BAD"] = BAD
 eg["LIST"] = LIST
 eg["ALL"] = ALL
@@ -111,5 +136,7 @@ eg["runs"] = runs
 eg["SYM"] = SYM
 eg["NUM"] = NUM
 eg["BIGNUM"] = BIGNUM
+eg["CSV"] = CSV
+eg["STATS"] = STATS
 
-eg["runs"]("ALL")
+runs("ALL")
