@@ -121,19 +121,19 @@ def CSV():
       oo_2(row)
     else:
       return
-  csv("../data/data.csv", fun)
+  csv("data/data.csv", fun)
   return True
 
 def DATA(the):
   print("----DATA TEST CASE------")
-  d = Data("../data/data.csv", the)
+  d = Data("data/data.csv", the)
   for _,col in d.cols.y.items():
      oo(col) 
   return True
 
 def STATS(the):
   print("----STATS TEST CASE------")
-  data = Data("../data/data.csv", the)
+  data = Data("data/data.csv", the)
   div = lambda col: col.div()
   mid = lambda col: col.mid()
   print("xmid", o(data.stats(2, data.cols.x, mid)))
