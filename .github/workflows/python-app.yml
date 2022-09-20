@@ -36,4 +36,11 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with test_engine
       run: |
-        python3 src/main.py --eg ALL
+        python3 src/main.py --eg LIST
+        python3 src/main.py --eg LS
+        python3 src/main.py --eg SYM
+        python3 src/main.py --eg NUM
+        python3 src/main.py --eg BIGNUM
+        python3 src/main.py --eg CSV
+        python3 src/main.py --eg DATA
+        python3 src/main.py --eg STATS
