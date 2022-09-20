@@ -44,4 +44,4 @@ setup(
         keywords='requirements license python gitignore',
         license='MIT',
         )
-Footer
+
