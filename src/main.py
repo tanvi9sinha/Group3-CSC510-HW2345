@@ -1,8 +1,8 @@
 from cgi import test
 import sys
 from cli import *
-# sys.path.append('../')
+sys.path.append('../tests/')
 from tests import *
 the = cli_func(sys.argv[1:])
 if the["eg"] != "nothing":
-    runs(the["eg"], the)
+    test.runs(the["eg"], the)
