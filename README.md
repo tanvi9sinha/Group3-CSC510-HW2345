@@ -21,7 +21,11 @@ python3 test_engine.py
 ```
 
 ## About this project
-This is a part of CSC 510 course at NC State University, wherein we have converted a full-fledged Lua codebase into a Python one. Our project supports all functionality from the corresponding Lua project. The setup and installation instructions can be found in the ```INSTALL.md``` file.
+This is a part of CSC 510 Software Engineering at NC State University, wherein we have converted a full-fledged Lua codebase into a Python one. Our project supports all functionality from the corresponding Lua project. The setup and installation instructions can be found in the ```INSTALL.md``` file.
 
 The test engine can be found in the ```tests``` folder, which houses all our test functions. All the classes, miscellaneous functions, and other pieces of code can be found in the ```src``` folder.
+
+This project is licensed under the MIT license. Details can be found in the ```LICENSE.md``` file.
+
+
 
