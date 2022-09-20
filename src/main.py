@@ -5,4 +5,4 @@ sys.path.append('../tests/')
 # from tests import *
 the = cli_func(sys.argv[1:])
 if the["eg"] != "nothing":
-    tests.runs(the["eg"], the)
+    test_engine.runs(the["eg"], the)
