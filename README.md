@@ -14,7 +14,6 @@ Repo for homeworks 2,3,4, and 5 Group 3 of CSC510 Fall 2022 - Palash Rathod, Shr
 [![DOI](https://zenodo.org/badge/533096328.svg)](https://zenodo.org/badge/latestdoi/533096328)
 [![GitHub forks](https://img.shields.io/github/forks/kartikson1/Group3-CSC510-HW2345?style=social)](https://github.com/kartikson1/Group3-CSC510-HW2345/network/members)
 
-![Codecov](https://img.shields.io/codecov/c/github/kartikson1/Group3-CSC510-HW2345?token=88f9f225-741b-4cfd-85c2-148ebb15962a)
 
 
 To run the test engine, execute the following command from the root directory - 
