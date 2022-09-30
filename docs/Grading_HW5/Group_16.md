@@ -29,9 +29,9 @@ Score: 49
 |Issues are discussed before they are closed| 0 | No issues opened |
 |Chat channel: exists| 0 | No discussions visible |
 |Test cases: a large proportion of the issues related to handling failing cases.| 0 | No issues opened |
-|Evidence that the whole team is using the same tools: everyone can get to all tools and files| 3 | Visible from commit insights |
-|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 3 | Visible from commit insights |
-|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| 3 | Visible from commit insights |
-|Evidence that the members of the team are working across multiple places in the code base| 2 | Visible from commits |
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files| 3 | Evident from commit insights |
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 3 | Evident from commit insights |
+|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| 3 | Evident from commit insights |
+|Evidence that the members of the team are working across multiple places in the code base| 2 | Evident from commits |
 |Short release cycles | 3 | GH environment |
 
