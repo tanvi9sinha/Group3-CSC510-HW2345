@@ -7,7 +7,7 @@ Score: 53
 |Video1| 0 | Not applicable | 
 |Video2| 0 | Not applicable | 
 |Workload is spread over the whole team (one team member is often Xtimes more productive than the others, but nevertheless, here is a track record that everyone is contributing a lot)| 2 | From GH insights |
-|Number of commits| 155 | From GH insights |
+|Number of commits| 3 | From GH insights |
 |Number of commits: by different people| 1 | From GH insights |
 |Issues reports: there are **many**| 0 | No issues opened |
 |Issues are being closed| 1 | Only 1 issue closed |
