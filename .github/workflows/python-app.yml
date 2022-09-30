@@ -44,9 +44,3 @@ jobs:
         python3 src/main.py --eg CSV
         python3 src/main.py --eg DATA
         python3 src/main.py --eg STATS
-    - name: Generate Report
-      run: |
-        pip install coverage
-        coverage run -m pytest
-    - name: Upload Coverage to Codecov
-      uses: codecov/codecov-action@v2
