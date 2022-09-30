@@ -44,3 +44,7 @@ jobs:
         python3 src/main.py --eg CSV
         python3 src/main.py --eg DATA
         python3 src/main.py --eg STATS
+    - name: Run tests and collect coverage
+      run: pytest --cov app
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
