@@ -1,5 +1,4 @@
-Group: https://github.com/kartikson1/Group3-CSC510-HW2345
-
+Group: https://github.com/landog893/CSC-510-Group-21-HW-1
 Score: 53
 
 |Notes|Score|Evidence|
