@@ -1,6 +1,6 @@
 Group: https://github.com/landog893/CSC-510-Group-21-HW-1
 
-Score: 53
+Score: 42
 
 |Notes|Score|Evidence|
 |-----|---------|---------|
