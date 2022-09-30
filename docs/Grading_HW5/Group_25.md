@@ -1,5 +1,6 @@
 Group Link: https://github.com/divyagiridhar/CSC510_Group25_HW02
 
+Score: 60
 
 |Notes|Score|Evidence|
 |-----|---------|---------|
