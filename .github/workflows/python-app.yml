@@ -53,3 +53,10 @@ jobs:
       run: |
         pipenv run coverage run tests/test_engine.py
         pipenv run coverage report
+    - name: Get the xml output for coverage
+      run: |
+        coverage xml
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
