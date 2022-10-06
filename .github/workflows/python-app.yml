@@ -51,7 +51,7 @@ jobs:
         pipenv install
     - name: Run tests
       run: |
-        pipenv run coverage run tests/test_engine.py
+        pipenv run coverage run src/main.py --eg ALL
         pipenv run coverage report
     - name: Get the xml output for coverage
       run: |
